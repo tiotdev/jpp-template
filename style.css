@@ -1,0 +1,552 @@
+/*
+Theme Name: JPP Photography
+Theme URI: https://julianpetersphotography.de
+Description: Template for a photography website
+Author: Julian Peters
+Author URI: https://tiot.de
+Version: 2.0
+*/
+@import url(https://fonts.googleapis.com/css?family=Hind);
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.prefoot {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -112px;
+}
+.prefoot:after {
+  content: "";
+  display: block;
+}
+.archive-foot, .prefoot:after {
+  height: 142px;
+}
+
+body, html, .body-container, #content {
+    height: 100%;
+    min-height: 100%;
+    margin:0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Hind;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.navli {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.navli-active {
+  color:#00bc8c !important;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 15px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: rgba(0,0,0,1.00);
+  font-style: normal;
+  font-family: Montserrat;
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+  text-align: left;
+}
+h1 {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 400;
+}
+h2 {
+  padding-top: 50px;
+  font-size: 33px;
+  line-height: 60px;
+  font-weight: 400;
+}
+a.cw {
+  color: #000 !important;
+}
+h3 a {
+  color: #000 !important;
+}
+#panel-top {height: 100%;}
+#panel-parenttop {height: 50%;}
+hr.title_break {
+    width: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #fff;
+    border-top: 2px solid #fff;
+}
+hr.whitebrk {
+    border-color: #000;
+    border-top: 2px solid #000;
+}
+.aboutbg {
+background: url(images/about-bg.jpg) no-repeat center center scroll;
+}
+.aboutinner {
+  background:rgba(255, 255, 255, 0.6) !important;
+  color: #000;
+  padding: 0px 30px 30px 30px;
+  margin: 30px 30px 30px 30px;
+}
+.bg-blur {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  position: absolute;
+}
+.panel-parenttop {
+  height: 50%;
+  position: absolute;
+}
+.bg-parentblur {
+  height: 50%;
+  position: absolute;
+}
+.blur-parentoverlay {
+margin-top: 50px;
+}
+.blur-overlay {
+  display:flex; align-items: center; justify-content: center;
+  text-shadow: 3px 3px 6px rgba(150, 150, 150, 1);
+position: absolute;
+  top: 10px;
+  left: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+}
+.mycarousel-control {
+  position: fixed;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.mycarousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.mycarousel-control:hover,
+.mycarousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.bgprim  {background: #375a7f;}
+.card  {
+  min-height:160px !important;
+    background-color: white; color:black; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); padding: 10px 15px 10px 15px; margin-top:-10px;
+}
+.searchform {height:300px; width:100%; background: grey; display:flex; align-items: center; justify-content: center;}
+.eqhdiv {
+  min-height:440px !important;
+  padding-bottom: 40px;
+}
+.cardwrap {
+margin-bottom: 30px;
+position: relative !important;
+}
+.toppad  {padding-top: 20px;}
+
+
+.card-thumb { }
+  .card-more {
+    padding: 10px 20px 10px 20px;
+    text-align: center; text-transform:uppercase; font-size:22px; border: 1px solid #00bc8c !important; background: #375a7f;     transition: all 0.5s ease; display: block;
+    width:100%;
+  }
+
+  .card-more:hover {
+    background: #00bc8c !important;
+    border: 1px solid #375a7f !important;
+    color:#375a7f !important;
+    text-decoration: none !important;
+  }
+a.nohover:hover, a.nohover:active, a.nohover:focus {
+    text-decoration: none !important;
+  }
+    .card-thumb span { visibility: hidden; position: absolute; top:0%; transition: all 0.5s ease; background: rgba(0,0,0,0); width:100%; height:100%; padding:0 0 0 0; display:flex; align-items: center; justify-content: center; color: rgba(0,0,0,0);
+      font-size: 150px;  text-align:center;  }
+    .card-thumb:hover span { visibility: visible; background: rgba(0,0,0,0.5);  color: white; }
+    .card-thumb { position: relative; }
+
+.thumbstream span {color: rgba(0,0,0,0);  visibility: hidden; transition: all 0.5s ease; background: rgba(0,0,0,0); position: absolute; top:0%; width:100%; height:100%; padding:0 0 0 0; display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */ }
+.thumbstream:hover span { visibility: visible; background: rgba(0,0,0,0.5); color:white;}
+.thumbstream { position: relative; }
+span h4  { font-size: 25px; color: white; text-align:center; margin:10px 10px 10px 10px;  display: inline-block;
+  vertical-align: middle; }
+  .btn {
+ border-radius: 0 !important;
+ text-transform: uppercase;
+margin:20px 20px 20px 20px;
+padding:15px 30px 15px 30px !important;
+font-family: Helvetica, Arial, sans-serif;
+letter-spacing: 2px;
+}
+  .btn-primary {
+    transition: all 0.5s ease;
+    background:rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid white !important;
+    color:white !important;
+  }
+  a.btn-primary:hover, a.btn-primary:active, a.btn-primary:focus  {
+    background:rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #28415b !important;
+    color:#28415b !important;
+  }
+  .btn-secondary {
+    margin:0px 0px 0px 0px;
+    bottom: 0; position: relative;
+    transition: all 0.5s ease;
+    background:rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid white !important;
+    color:white !important;
+  }
+  .btn-default {
+    transition: all 0.5s ease;
+    background:rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid #28415b !important;
+    color:#28415b !important;
+  }
+  a.btn-default:hover, a.btn-default:active, a.btn-default:focus  {
+    background:rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid white !important;
+
+    color:white !important;
+  }
+
+
+  .bigg {
+      font-size: 100px;
+  }
+  .cprime {
+    color: #00bc8c;
+  }
+  .circles-row {
+  text-align: center;
+  margin-top: 50px;
+}
+.whitebg {
+  background: white !important;
+  color: black !important;
+}
+.loadmore {margin-bottom: 50px;}
+
+#navigationtop {
+    height:40px;
+ position: absolute;
+  top: 0px;
+    left:0;
+    width:100%;
+    z-index:99;
+}
+
+#content {
+    z-index:1;
+  top:40px;
+  padding-top: 40px;
+}
+#imagecontent h1 {padding-bottom:20px;}
+#imagecontent {min-height:97%; background:#000;}
+#main {height:100%; background: url(../images/background.jpg) no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+background-attachment:fixed;
+}
+#topdiv {background-color:rgba(0,0,0,0.5); height:100%}
+#archive {background-color: #222; min-height:100%;}
+#featured background-color: #495232;}
+#categories {background-color: #A09FBB;}
+.prefoot {background-color: #001c3a; height:100%;
+}
+#exif {background-color: #001c3a; padding:30px 0 30px 0;}
+.imgcontainer {
+
+  height:3000px;
+
+}
+td a {
+  text-decoration: none !important;
+  text-transform: lowercase;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #71767a;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    border: 1px solid #b9c1c7;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+}
+.hideimg {
+     opacity: 0;  max-height: 100%;
+  width: 100%; /* max width */
+}
+.center {
+text-align: center;
+}
+.single-image {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.single-details {
+  position: absolute;
+  bottom: 0;
+    padding-bottom: 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.archive-h1 {
+  font-size: 4em;
+  padding-top: 50px;
+}
+.archive-lead {
+color:#fff;
+font-size: 22.5px;
+}
+.archive-image-blur {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.archive-image {
+  position: relative;
+  width: 100%;
+height:100%;
+}
+.archive-details {
+  position: absolute;
+    bottom: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.item .thumb {
+	width: 25%;
+  height: 150px;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;
+}
+
+.clear {
+        clear:both;
+}
+.headerimg {
+  width: 100%;
+  height: 100%;
+}
+.imgheadercontent {
+  min-height: 300px;
+}
+footer {
+    color: #fff;
+}footer h3 {
+    margin-bottom: 30px;
+}
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+.articleimage {width:300px; height:200px;}
+.fullwidth {
+width: 100%;
+}
+.blesscol {
+height: 100%;
+}
+.blessthumb {
+height: 100%;
+}
+.postthumb{
+  margin-right:-30px;
+}
+.carousel,
+.item,
+.active {
+height: 100%;
+}
+.carousel-inner {
+	background-color:#000;
+height: 100%;
+}
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+width: 100%;
+height: 100%;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+img.mainpic {padding:60px 0 50px 0;   display: table;
+    margin: 0 auto;}
+h1, h2 {padding-bottom:10px;}
+
+figcaption {position: absolute; bottom:23px;height:50px;color: #fff;font-size: 2rem;min-width:300px;padding-bottom:65px;padding-left:20px;margin-left:2px;
+background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+.noshow {display:none;}
+.exif-list {display: block;}
+ul.nolist {list-style-type:none; margin-left:-40px; }
+::selection {
+  background: #375A7F;
+}
+::-moz-selection {
+  background: #375A7F;
+}
+.thumbnail {
+ opacity: 1;
+}
+.thumbnail:hover {
+     opacity: 0.7;
+   transition: opacity 500ms ease-in;
+   -moz-transition: opacity 500ms ease-in;
+   -webkit-transition: opacity 500ms ease-in;
+}
+.map-center{  display: table;
+    margin: 0 auto;}
+    .carousel-fade {
+        .carousel-inner {
+            .item {
+                transition-property: opacity;
+            }
+
+            .item,
+            .active.left,
+            .active.right {
+                opacity: 0;
+            }
+
+            .active,
+            .next.left,
+            .prev.right {
+                opacity: 1;
+            }
+
+            .next,
+            .prev,
+            .active.left,
+            .active.right {
+                left: 0;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .carousel-control {
+            z-index: 2;
+        }
+    }
+
+
+
+    html,
+    body,
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+        height: 100%;
+    }
+    .search-form {
+    	position: absolute;
+    	right: 20px;
+    	top: 1px;
+    }
+
+    .search-field {
+    	background-color: transparent;
+    	background-image: url(https://julianpetersphotography.de/wp-content/uploads/searchicon.png);
+    	background-position: 5px center;
+    	background-repeat: no-repeat;
+    	background-size: 24px 24px;
+    	border: none;
+    	cursor: pointer;
+    	height: 37px;
+    	margin: 3px 0;
+    	padding: 0 0 0 34px;
+    	position: relative;
+    	-webkit-transition: width 400ms ease, background 400ms ease;
+    	transition:         width 400ms ease, background 400ms ease;
+    	width: 0;
+    }
+
+    .search-field:focus {
+    	background-color: #fff;
+    	border: 2px solid black;
+    	cursor: text;
+    	outline: 0;
+    	width: 230px;
+    }
+
+    .search-submit {
+      display: none;
+    }
+
+    input[type="search"] {
+      -webkit-appearance: textfield;
+    }
