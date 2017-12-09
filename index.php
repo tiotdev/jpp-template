@@ -112,12 +112,12 @@ $catargs = array(
 <div class="row">
   <?php global $post; foreach (get_categories( $catargs ) as $cat) : ?>
     <div class="col-lg-4 col-sm-6 col-xs-12 cardwrap"><div class="eqhdiv">
-      <div class="card-thumb"><a href="<?php echo get_category_link($cat->term_id); ?>"><div><img src="<?php echo my_get_taxonomy_image_url($cat->term_id,'my_cat_thumb'); ?>" width="800" class="img-responsive" /></div><span class="glyphicon glyphicon-camera"></span></a></div>
-      <div class="card"><div class="card-inner"><a href="<?php echo get_category_link($cat->term_id); ?>"><h3><?php echo $cat->cat_name; ?></h3></a><p><?php
+      <div class="card-thumb"><a href="<?php echo get_term_link($cat->term_id); ?>"><div><img src="<?php echo my_get_taxonomy_image_url($cat->term_id,'my_cat_thumb'); ?>" width="800" class="img-responsive" /></div><span class="glyphicon glyphicon-camera"></span></a></div>
+      <div class="card"><div class="card-inner"><a href="<?php echo get_term_link($cat->term_id); ?>"><h3><?php echo $cat->cat_name; ?></h3></a><p><?php
 echo wp_trim_words( category_description($cat->term_id), 22, '...' );
 ?> </p>
       </div>    </div>
-      <a class="nohover" href="<?php echo get_category_link($cat->term_id); ?>"><div class="card-more center">View collection</div></a>
+      <a class="nohover" href="<?php echo get_term_link($cat->term_id); ?>"><div class="card-more center">View collection</div></a>
     </div>   </div>
   <?php endforeach; ?>
 </div>
